@@ -1,5 +1,5 @@
 # app.py
- 
+    
 import streamlit as st
 from translator import Translator
 from utils.language_utils import get_supported_languages, get_model_config
