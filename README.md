@@ -6,7 +6,7 @@
 
 ## ✅ Features
 
-- 🔤 Translate between **10+ language pairs**
+- 🔤 Translate between **language pairs**
 - ⚡ Powered by **MBART (facebook/mbart-large-50-many-to-many-mmt)**
 - 🧠 Built with **Transformers, PyTorch, and Streamlit**
 - 📝 Intuitive dual-pane UI for input/output like Google Translate
