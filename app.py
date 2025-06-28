@@ -81,7 +81,7 @@ with btn_input_col:
                 st.rerun()
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Clear All Button
+# clear all Button
 with btn_output_col:
     if st.session_state.translated_text:
         if st.button("🧹 Clear All", key="clear_button"):
