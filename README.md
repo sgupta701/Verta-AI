@@ -31,6 +31,11 @@ multi-lang-translator/
 
 ## Demo
 
+### 🔗 Check the app in action here:
+
+[Live Demo on Streamlit](https://lingua-ai-translator.streamlit.app/)
+
+
 ![UI of Lingua.ai](images/lingua-ui.png)
 *Figure 1: Lingua.ai - Multi language translator UI*
 
