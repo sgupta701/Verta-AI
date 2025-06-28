@@ -1,12 +1,12 @@
-# 🌍 Lingua.ai - AI-Powered Multi-Language Translator
+# 🌍 Lingua.ai - AI-Powered Multi-Language Translator 
 
-**Lingua.ai** is a Streamlit-based web application that provides seamless translation across multiple languages using generative AI. It uses the **MBART multilingual transformer model** from Hugging Face for high-quality translation, and features a clean, user-friendly UI.
+**Lingua.ai** is a Streamlit-based web application that provides seamless translation across multiple languages using generative AI. It uses the **MBART multilingual transformer model** from Hugging Face for high-quality translation, and features a clean, user-friendly UI..
 
 ---
 
 ## ✅ Features
 
-- 🔤 Translate between **10+ language pairs**
+- 🔤 Translate between **language pairs**
 - ⚡ Powered by **MBART (facebook/mbart-large-50-many-to-many-mmt)**
 - 🧠 Built with **Transformers, PyTorch, and Streamlit**
 - 📝 Intuitive dual-pane UI for input/output like Google Translate
@@ -30,6 +30,11 @@ multi-lang-translator/
 ---
 
 ## Demo
+
+### 🔗 Check the app in action here:
+
+[Live Demo on Streamlit](https://lingua-ai-translator.streamlit.app/)
+
 
 ![UI of Lingua.ai](images/lingua-ui.png)
 *Figure 1: Lingua.ai - Multi language translator UI*
