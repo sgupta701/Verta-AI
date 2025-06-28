@@ -31,16 +31,16 @@ multi-lang-translator/
 
 ## Demo
 
-![UI of Lingua.ai](lingua-ui.png)
+![UI of Lingua.ai](images/lingua-ui.png)
 *Figure 1: Lingua.ai - Multi language translator UI*
 
-![Language selection](language_selection.png)
+![Language selection](images/language_selection.png)
 *Figure 2: Language Selection*
 
-![English-Japanese](english-japanese.png)
+![English-Japanese](images/english-japanese.png)
 *Figure 3: English to Japanese Translation*
 
-![Engligh-Hindi](english-hindi.png)
+![Engligh-Hindi](images/english-hindi.png)
 *Figure 4: English to Hindi Translation*
 
 ---
