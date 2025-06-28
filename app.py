@@ -10,14 +10,12 @@ st.markdown("---")
 
 languages = get_supported_languages()
 
-# Language dropdowns
 col1, col2, col3 = st.columns([3, 1, 3])
 with col1:
     source_lang = st.selectbox("Source Language", languages, index=0)
 with col3:
     target_lang = st.selectbox("Target Language", languages, index=1)
 
-# Session state
 if "translator" not in st.session_state:
     st.session_state.translator = Translator()
 if "input_text" not in st.session_state:
@@ -25,7 +23,6 @@ if "input_text" not in st.session_state:
 if "translated_text" not in st.session_state:
     st.session_state.translated_text = ""
 
-# Input and Output layout
 input_col, arrow_col, output_col = st.columns([3, 0.5, 3])
 
 with input_col:
@@ -50,7 +47,6 @@ with output_col:
 
 btn_input_col, _, btn_output_col = st.columns([3, 0.5, 3])
 
-# Translate Button
 with btn_input_col:
     st.markdown("""
         <style>
@@ -81,7 +77,6 @@ with btn_input_col:
                 st.rerun()
     st.markdown('</div>', unsafe_allow_html=True)
 
-# clear all Button
 with btn_output_col:
     if st.session_state.translated_text:
         if st.button("🧹 Clear All", key="clear_button"):
