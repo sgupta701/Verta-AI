@@ -29,6 +29,23 @@ multi-lang-translator/
 
 ---
 
+## Demo
+
+![UI of Lingua.ai](lingua-ui.png)
+*Figure 1: Lingua.ai - Multi language translator UI*
+
+![Language selection](language_selection.png)
+*Figure 2: Language Selection*
+
+![English-Japanese](english-japanese.png)
+*Figure 3: English to Japanese Translation*
+
+![Engligh-Hindi](english-hindi.png)
+*Figure 4: English to Hindi Translation*
+
+---
+
+
 ## 🚀 How to Run Locally
 
 ### 1. Clone the Repository
