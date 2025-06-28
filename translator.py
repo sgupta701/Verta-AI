@@ -22,9 +22,13 @@ class Translator:
         if "mbart" in model_name:
             tokenizer.src_lang = src_lang
             inputs = tokenizer(text, return_tensors="pt", max_length=512, truncation=True)
+
+            # ✅ FIXED: Use lang_code_to_id for proper forced_bos_token_id
+            forced_bos_token_id = tokenizer.lang_code_to_id[tgt_lang]
+
             generated_tokens = model.generate(
                 **inputs,
-                forced_bos_token_id=tokenizer.convert_tokens_to_ids(tgt_lang),
+                forced_bos_token_id=forced_bos_token_id,
                 max_length=512
             )
             return tokenizer.decode(generated_tokens[0], skip_special_tokens=True)
@@ -34,3 +38,4 @@ class Translator:
             with torch.no_grad():
                 outputs = model.generate(**inputs, max_length=512)
             return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
