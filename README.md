@@ -1,4 +1,4 @@
-# 🌍 Lingua.ai - GenAI-Powered Multi-Language Translator
+# 🌍 Lingua.ai - AI-Powered Multi-Language Translator
 
 **Lingua.ai** is a Streamlit-based web application that provides seamless translation across multiple languages using generative AI. It uses the **MBART multilingual transformer model** from Hugging Face for high-quality translation, and features a clean, user-friendly UI.
 
