@@ -90,4 +90,4 @@ with btn_output_col:
             st.rerun()
 
 st.markdown("---")
-st.caption("⚡ Lingua.ai | GenAI-Powered Multi-Language Translation")
+st.caption("⚡ Lingua.ai | AI-Powered Multi-Language Translation")
