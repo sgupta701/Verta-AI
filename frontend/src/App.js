@@ -83,7 +83,7 @@ const App = () => {
       />
 
       <footer>
-        ⚡ LingoBridge | GenAI-Powered Multi-Language Translation
+        ⚡ Verta AI | GenAI-Powered Multi-Language Translation
       </footer>
     </div>
   );
