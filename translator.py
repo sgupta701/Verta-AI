@@ -9,13 +9,20 @@ class Translator:
 
     def load_model(self, model_name):
         if model_name not in self.loaded_models:
-            try:
-                tokenizer = AutoTokenizer.from_pretrained(model_name)
-                model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-                self.loaded_models[model_name] = (tokenizer, model)
-            except Exception as e:
-                print("⚠️ Model loading failed:", e)
-                raise e
+            print(f"[INFO] Forcing download of {model_name}...")
+
+            tokenizer = AutoTokenizer.from_pretrained(
+                model_name,
+                force_download=True  # Force re-download even if cached
+            )
+
+            model = AutoModelForSeq2SeqLM.from_pretrained(
+                model_name,
+                force_download=True  # Force re-download
+            )
+
+            self.loaded_models[model_name] = (tokenizer, model)
+
         return self.loaded_models[model_name]
 
     def translate(self, text, model_name, src_lang=None, tgt_lang=None):
@@ -24,8 +31,18 @@ class Translator:
 
         tokenizer, model = self.load_model(model_name)
 
-        # Helsinki-NLP models do not need src_lang / tgt_lang
-        inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True)
-        with torch.no_grad():
-            outputs = model.generate(**inputs, max_length=512)
-        return tokenizer.decode(outputs[0], skip_special_tokens=True)
+        if "mbart" in model_name:
+            tokenizer.src_lang = src_lang
+            inputs = tokenizer(text, return_tensors="pt", max_length=512, truncation=True)
+            generated_tokens = model.generate(
+                **inputs,
+                forced_bos_token_id=tokenizer.lang_code_to_id[tgt_lang],
+                max_length=512
+            )
+            return tokenizer.decode(generated_tokens[0], skip_special_tokens=True)
+
+        else:
+            inputs = tokenizer(text, return_tensors="pt", max_length=512, truncation=True)
+            with torch.no_grad():
+                outputs = model.generate(**inputs, max_length=512)
+            return tokenizer.decode(outputs[0], skip_special_tokens=True)

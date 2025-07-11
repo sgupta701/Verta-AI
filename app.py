@@ -61,7 +61,7 @@ with btn_input_col:
         else:
             model_config = get_model_config(source_lang, target_lang)
             if not model_config:
-                st.error("⚠️ Unsupported language pair.")
+                st.error("⚠️ Language pair not supported.")
             else:
                 with st.spinner("Translating..."):
                     model_name = model_config["model"]
