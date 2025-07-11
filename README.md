@@ -1,107 +1,145 @@
-# 🌍 Verta AI - AI-Powered Multi-Language Translator 
 
-**Verta AI** is a Streamlit-based web application that provides seamless translation across multiple languages using generative AI. It uses the **MBART multilingual transformer model** from Hugging Face for high-quality translation, and features a clean, user-friendly UI..
- 
+# 🌍 Verta AI - GenAI-Powered Multi-Language Translator
+
+**Verta AI** is a full-stack AI-powered web application for real-time multilingual text translation using Hugging Face’s **MBART transformer model**. It features a clean Google Translate-like interface, developed with **React** (frontend) and **FastAPI** (backend), and deployable for free using **Vercel** and **Render**.
+
 ---
 
 ## ✅ Features
 
-- 🔤 Translate between **language pairs**
-- ⚡ Powered by **MBART (facebook/mbart-large-50-many-to-many-mmt)**
-- 🧠 Built with **Transformers, PyTorch, and Streamlit**
-- 📝 Intuitive dual-pane UI for input/output like Google Translate
-- 🧹 "Clear All" functionality
+- 🌐 Translate across **English, Hindi, Japanese, Spanish, and Urdu**
+- ⚙️ Powered by **facebook/mbart-large-50-many-to-many-mmt**
+- 🧠 Built using **Transformers, PyTorch, FastAPI, React**
+- 🔤 Responsive dual-pane UI for input/output
 
 ---
 
-## 📁 Project Structure
+## 📸 Live Demo
+
+- 🌐 Frontend: [https://verta-ai.vercel.app](https://verta-ai.vercel.app)
+- 🧠 Backend: [https://verta-ai-backend.onrender.com](https://verta-ai-backend.onrender.com)
+
+---
+
+## 🧠 Tech Stack
+
+| Layer      | Technology                     |
+|------------|--------------------------------|
+| Frontend   | React, Axios, HTML/CSS         |
+| Backend    | FastAPI, Transformers, PyTorch |
+| ML Model   | MBART (Multilingual BART)      |
+| Deployment | Vercel (frontend), Render (backend) |
+
+---
+
+## 🗂️ Project Structure
 
 ```
 multi-lang-translator/
-├── app.py                  # Streamlit frontend
-├── translator.py           # Core translation logic using MBART
-├── utils/
-│   ├── language_utils.py   # Language mapping and model selection
-├── requirements.txt       
+├── backend/
+│   └── app/
+│       ├── main.py              # FastAPI server
+│       ├── translator.py        # Translation logic
+│       └── utils/
+│           └── language_utils.py# Language/model config
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── App.js               # React frontend
+│       └── styles.css           # Custom CSS styling
+│   └── package.json
+│
 ├── .gitignore
-└── README.md             
+└── README.md
 ```
 
 ---
 
-## Demo
+## 🚀 Local Setup Instructions
 
-### 🔗 Check the app in action here:
-
-[Live Demo on Streamlit](https://lingua-ai-translator.streamlit.app/)
-
-
-![UI of Lingua.ai](images/lingua-ui.png)
-*Figure 1: Lingua.ai - Multi language translator UI*
-
-![Language selection](images/language_selection.png)
-*Figure 2: Language Selection*
-
-![English-Japanese](images/english-japanese.png)
-*Figure 3: English to Japanese Translation*
-
-![Engligh-Hindi](images/english-hindi.png)
-*Figure 4: English to Hindi Translation*
-
----
-
-
-## 🚀 How to Run Locally
-
-### 1. Clone the Repository
+### 🔧 1. Clone the Repository
 
 ```bash
-git clone https://github.com/sgupta701/Lingua.ai.git
+git clone https://github.com/sgupta701/Verta-AI.git
 cd multi-lang-translator
 ```
 
-### 2. Create Virtual Environment
+---
+
+### 🧠 2. Backend Setup (FastAPI)
 
 ```bash
+cd backend
 python -m venv venv
-venv\Scripts\activate  # Windows
+venv\Scripts\activate         # Windows
 # or
-source venv/bin/activate  # macOS/Linux
-```
-
-### 3. Install Requirements
-
-```bash
-pip install --upgrade pip
+source venv/bin/activate       # macOS/Linux
 pip install -r requirements.txt
 ```
 
-> 💡 PyTorch (CPU version) should be installed like this:
-
+> 💡 Install PyTorch manually if needed:
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 
-### 4. Run the App
+Run backend:
 
 ```bash
-streamlit run app.py
+uvicorn app.main:app --reload
 ```
+
+✅ API will be available at: `http://localhost:8000`
 
 ---
 
-## ✨ Future Enhancements
+### 💻 3. Frontend Setup (React)
 
-- 🎛️ Tone/formality selection via LLM-based rephrasing
-- 🔊 Text-to-speech (TTS) integration
-- 🎙️ Voice input (Whisper/Vosk)
-- 📁 File translation upload
+```bash
+cd frontend
+npm install
+npm start
+```
+
+✅ Frontend will run at: `http://localhost:3000`
+
+---
+
+## 🌐 Supported Language Pairs
+
+| Source Language | Target Languages                      |
+|-----------------|----------------------------------------|
+| English         | Hindi, Japanese, Spanish, Urdu         |
+| Hindi           | English, Japanese, Spanish             |
+| Japanese        | English, Hindi, Spanish, Urdu          |
+| Spanish         | English, Hindi, Japanese, Urdu         |
+| Urdu            | English, Hindi, Spanish, Japanese      |
+
+> ❌ **Hindi → Urdu** is intentionally blocked to avoid poor model performance.
+
+---
+
+## 🌟 Planned Enhancements
+
+- 🎛️ Tone/Formality selector via LLM rephrasing
+- 🔉 Text-to-Speech (TTS) support
+- 📁 File translation support (PDF, DOCX, TXT)
+- 🎙️ Voice input (using Whisper/Vosk)
 - ⬇️ Download translated output
 
 ---
 
 ## 📜 License
 
-built for learning and demonstration. Free to use, modify, and deploy.
+This project is for educational and demonstration purposes.  
+Feel free to use, modify, and deploy it.
+
+---
+
+## 👩‍💻 Author
+
+**Saumya Gupta**  
+📫 [GitHub](https://github.com/sgupta701)
 
 ---
