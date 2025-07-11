@@ -2,73 +2,64 @@
 
 supported_translation_models = {
     # English <-> Hindi
-    ("English", "Hindi"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "en_XX", "tgt_lang": "hi_IN"},
-    ("Hindi", "English"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "hi_IN", "tgt_lang": "en_XX"},
+    ("English", "Hindi"): {"model": "Helsinki-NLP/opus-mt-en-hi", "src_lang": None, "tgt_lang": None},
+    ("Hindi", "English"): {"model": "Helsinki-NLP/opus-mt-hi-en", "src_lang": None, "tgt_lang": None},
 
     # English <-> French
-    ("English", "French"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "en_XX", "tgt_lang": "fr_XX"},
-    ("French", "English"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "fr_XX", "tgt_lang": "en_XX"},
+    ("English", "French"): {"model": "Helsinki-NLP/opus-mt-en-fr", "src_lang": None, "tgt_lang": None},
+    ("French", "English"): {"model": "Helsinki-NLP/opus-mt-fr-en", "src_lang": None, "tgt_lang": None},
 
     # English <-> Japanese
-    ("English", "Japanese"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "en_XX", "tgt_lang": "ja_XX"},
-    ("Japanese", "English"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ja_XX", "tgt_lang": "en_XX"},
+    ("English", "Japanese"): {"model": "Helsinki-NLP/opus-mt-en-ja", "src_lang": None, "tgt_lang": None},
+    ("Japanese", "English"): {"model": "Helsinki-NLP/opus-mt-ja-en", "src_lang": None, "tgt_lang": None},
 
     # English <-> Spanish
-    ("English", "Spanish"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "en_XX", "tgt_lang": "es_XX"},
-    ("Spanish", "English"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "es_XX", "tgt_lang": "en_XX"},
+    ("English", "Spanish"): {"model": "Helsinki-NLP/opus-mt-en-es", "src_lang": None, "tgt_lang": None},
+    ("Spanish", "English"): {"model": "Helsinki-NLP/opus-mt-es-en", "src_lang": None, "tgt_lang": None},
 
     # English <-> Urdu
-    ("English", "Urdu"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "en_XX", "tgt_lang": "ur_PK"},
-    ("Urdu", "English"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ur_PK", "tgt_lang": "en_XX"},
+    ("English", "Urdu"): {"model": "Helsinki-NLP/opus-mt-en-ur", "src_lang": None, "tgt_lang": None},
+    ("Urdu", "English"): {"model": "Helsinki-NLP/opus-mt-ur-en", "src_lang": None, "tgt_lang": None},
 
     # Hindi <-> French
-    ("Hindi", "French"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "hi_IN", "tgt_lang": "fr_XX"},
-    ("French", "Hindi"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "fr_XX", "tgt_lang": "hi_IN"},
+    ("Hindi", "French"): {"model": "Helsinki-NLP/opus-mt-hi-fr", "src_lang": None, "tgt_lang": None},
+    ("French", "Hindi"): {"model": "Helsinki-NLP/opus-mt-fr-hi", "src_lang": None, "tgt_lang": None},
 
     # Hindi <-> Japanese
-    ("Hindi", "Japanese"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "hi_IN", "tgt_lang": "ja_XX"},
-    ("Japanese", "Hindi"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ja_XX", "tgt_lang": "hi_IN"},
+    ("Hindi", "Japanese"): {"model": "Helsinki-NLP/opus-mt-hi-ja", "src_lang": None, "tgt_lang": None},
+    ("Japanese", "Hindi"): {"model": "Helsinki-NLP/opus-mt-ja-hi", "src_lang": None, "tgt_lang": None},
 
     # Hindi <-> Spanish
-    ("Hindi", "Spanish"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "hi_IN", "tgt_lang": "es_XX"},
-    ("Spanish", "Hindi"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "es_XX", "tgt_lang": "hi_IN"},
+    ("Hindi", "Spanish"): {"model": "Helsinki-NLP/opus-mt-hi-es", "src_lang": None, "tgt_lang": None},
+    ("Spanish", "Hindi"): {"model": "Helsinki-NLP/opus-mt-es-hi", "src_lang": None, "tgt_lang": None},
 
     # Hindi <-> Urdu
-    ("Hindi", "Urdu"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "hi_IN", "tgt_lang": "ur_PK"},
-    ("Urdu", "Hindi"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ur_PK", "tgt_lang": "hi_IN"},
+    ("Hindi", "Urdu"): {"model": "Helsinki-NLP/opus-mt-hi-ur", "src_lang": None, "tgt_lang": None},
+    ("Urdu", "Hindi"): {"model": "Helsinki-NLP/opus-mt-ur-hi", "src_lang": None, "tgt_lang": None},
 
     # French <-> Japanese
-    ("French", "Japanese"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "fr_XX", "tgt_lang": "ja_XX"},
-    ("Japanese", "French"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ja_XX", "tgt_lang": "fr_XX"},
+    ("French", "Japanese"): {"model": "Helsinki-NLP/opus-mt-fr-ja", "src_lang": None, "tgt_lang": None},
+    ("Japanese", "French"): {"model": "Helsinki-NLP/opus-mt-ja-fr", "src_lang": None, "tgt_lang": None},
 
     # French <-> Spanish
-    ("French", "Spanish"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "fr_XX", "tgt_lang": "es_XX"},
-    ("Spanish", "French"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "es_XX", "tgt_lang": "fr_XX"},
+    ("French", "Spanish"): {"model": "Helsinki-NLP/opus-mt-fr-es", "src_lang": None, "tgt_lang": None},
+    ("Spanish", "French"): {"model": "Helsinki-NLP/opus-mt-es-fr", "src_lang": None, "tgt_lang": None},
 
     # French <-> Urdu
-    ("French", "Urdu"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "fr_XX", "tgt_lang": "ur_PK"},
-    ("Urdu", "French"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ur_PK", "tgt_lang": "fr_XX"},
+    ("French", "Urdu"): {"model": "Helsinki-NLP/opus-mt-fr-ur", "src_lang": None, "tgt_lang": None},
+    ("Urdu", "French"): {"model": "Helsinki-NLP/opus-mt-ur-fr", "src_lang": None, "tgt_lang": None},
 
     # Japanese <-> Spanish
-    ("Japanese", "Spanish"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ja_XX", "tgt_lang": "es_XX"},
-    ("Spanish", "Japanese"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "es_XX", "tgt_lang": "ja_XX"},
+    ("Japanese", "Spanish"): {"model": "Helsinki-NLP/opus-mt-ja-es", "src_lang": None, "tgt_lang": None},
+    ("Spanish", "Japanese"): {"model": "Helsinki-NLP/opus-mt-es-ja", "src_lang": None, "tgt_lang": None},
 
     # Japanese <-> Urdu
-    ("Japanese", "Urdu"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ja_XX", "tgt_lang": "ur_PK"},
-    ("Urdu", "Japanese"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ur_PK", "tgt_lang": "ja_XX"},
+    ("Japanese", "Urdu"): {"model": "Helsinki-NLP/opus-mt-ja-ur", "src_lang": None, "tgt_lang": None},
+    ("Urdu", "Japanese"): {"model": "Helsinki-NLP/opus-mt-ur-ja", "src_lang": None, "tgt_lang": None},
 
     # Spanish <-> Urdu
-    ("Spanish", "Urdu"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "es_XX", "tgt_lang": "ur_PK"},
-    ("Urdu", "Spanish"): {"model": "facebook/mbart-large-50-many-to-many-mmt", "src_lang": "ur_PK", "tgt_lang": "es_XX"},
-}
-
-language_name_to_code = {
-    "English": "en_XX",
-    "Hindi": "hi_IN",
-    "French": "fr_XX",
-    "Japanese": "ja_XX",
-    "Spanish": "es_XX",
-    "Urdu": "ur_PK",
+    ("Spanish", "Urdu"): {"model": "Helsinki-NLP/opus-mt-es-ur", "src_lang": None, "tgt_lang": None},
+    ("Urdu", "Spanish"): {"model": "Helsinki-NLP/opus-mt-ur-es", "src_lang": None, "tgt_lang": None},
 }
 
 def get_supported_languages():
@@ -80,6 +71,5 @@ def get_supported_languages():
 
 def get_model_config(src_lang, tgt_lang):
     key = (src_lang.strip().title(), tgt_lang.strip().title())
-    print("Looking for model config with key:", key)  
+    print("Looking for model config with key:", key)
     return supported_translation_models.get(key)
-
