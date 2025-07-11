@@ -1,11 +1,11 @@
 # app.py
     
 import streamlit as st    
-from translator import Translator
+from backend.app.translator import Translator
 from utils.language_utils import get_supported_languages, get_model_config
 
 st.set_page_config(page_title="LinguaAI", layout="wide")
-st.markdown("<h1 style='text-align: center;'>Lingua.ai 🌍</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Verta AI 🌍</h1>", unsafe_allow_html=True)
 st.markdown("---")
 
 languages = get_supported_languages()

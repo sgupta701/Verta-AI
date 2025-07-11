@@ -6,3 +6,5 @@ venv/
 .DS_Store
 *.ipynb_checkpoints
 *.log
+app.py
+how-to-run.txt

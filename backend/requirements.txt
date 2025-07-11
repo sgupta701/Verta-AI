@@ -1,8 +1,10 @@
 # requirements
 
-streamlit
+fastapi
+uvicorn
 transformers
 torch
+sentencepiece
 langdetect
-pyttsx3
+
 
