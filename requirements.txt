@@ -3,7 +3,6 @@
 streamlit
 transformers
 torch
-sentencepiece
 langdetect
 pyttsx3
 
