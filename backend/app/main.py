@@ -19,7 +19,7 @@ translator = Translator()
 
 @app.get("/")
 def read_root():
-    return {"message": "Lingua.ai backend is running"}
+    return {"message": "Verta AI backend is running"}
 
 @app.post("/translate")
 async def translate(request: Request):
