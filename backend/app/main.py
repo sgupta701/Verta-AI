@@ -2,8 +2,8 @@
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from translator import Translator
-from utils.language_utils import get_model_config
+from app.translator import Translator
+from app.utils.language_utils import get_model_config
 
 app = FastAPI()
 
