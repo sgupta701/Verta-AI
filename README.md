@@ -16,8 +16,7 @@
 
 ## 📸 Live Demo
 
-- 🌐 Frontend: [https://verta-ai.vercel.app](https://verta-ai.vercel.app)
-- 🧠 Backend: [https://verta-ai-backend.onrender.com](https://verta-ai-backend.onrender.com)
+🌐[https://verta-ai.vercel.app](https://verta-ai.vercel.app)
 
 ---
 
