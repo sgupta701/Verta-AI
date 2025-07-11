@@ -22,7 +22,7 @@ const App = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://verta-ai-backend.onrender.com/", {
+      const response = await axios.post("https://verta-ai-backend.onrender.com/translate", {
         text: inputText,
         src_lang: sourceLang,
         tgt_lang: targetLang
