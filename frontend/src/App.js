@@ -83,7 +83,7 @@ const App = () => {
       />
 
       <footer>
-        ⚡ Verta AI | GenAI-Powered Multi-Language Translation
+        ⚡ Verta AI | AI-Powered Multi-Language Translation
       </footer>
     </div>
   );
