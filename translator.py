@@ -9,17 +9,10 @@ class Translator:
 
     def load_model(self, model_name):
         if model_name not in self.loaded_models:
-            print(f"[INFO] Forcing download of {model_name}...")
+            print(f"[INFO] Loading model: {model_name}")
 
-            tokenizer = AutoTokenizer.from_pretrained(
-                model_name,
-                force_download=True  # Force re-download even if cached
-            )
-
-            model = AutoModelForSeq2SeqLM.from_pretrained(
-                model_name,
-                force_download=True  # Force re-download
-            )
+            tokenizer = AutoTokenizer.from_pretrained(model_name)
+            model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
             self.loaded_models[model_name] = (tokenizer, model)
 
