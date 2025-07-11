@@ -1,7 +1,7 @@
 
 # 🌍 Verta AI - GenAI-Powered Multi-Language Translator
 
-**Verta AI** is a full-stack AI-powered web application for real-time multilingual text translation using Hugging Face’s **MBART transformer model**. It features a clean Google Translate-like interface, developed with **React** (frontend) and **FastAPI** (backend), and deployable for free using **Vercel** and **Render**.
+**Verta AI** is a full-stack AI-powered web application for real-time multilingual text translation using Hugging Face’s **MBART transformer model**. It features a clean interface, developed with **React** (frontend) and **FastAPI** (backend), and deployable using **Vercel** and **Render**.
 
 ---
 
