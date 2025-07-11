@@ -16,7 +16,39 @@
 
 ## 📸 Live Demo
 
-🌐[https://verta-ai.vercel.app](https://verta-ai.vercel.app)
+Google Drive : [click here](https://drive.google.com/file/d/1MSSlnKq5SAocXPTalaukXjLYlJ92JEoT/view?usp=drive_link)
+
+Screenshots:
+
+<p align="center">
+  <img src="images/ui-verta-ai.png" alt="Verta AI ui"/>
+  <br>
+  <em>Figure 1: User Interface of Verta AI</em>
+</p>
+<p align="center">
+  <img src="images/eng-japanese.png" alt="english to japanese translation"/>
+  <br>
+  <em>Figure 2: English to Japanese translation</em>
+</p>
+<p align="center">
+  <img src="images/japanese-spanish.png" alt="japanese to spanish translation"/>
+  <br>
+  <em>Figure 3: Japanese to Spanish translation</em>
+</p>
+<p align="center">
+  <img src="images/eng-hindi.png" alt="english to hindi translation"/>
+  <br>
+  <em>Figure 4: English to Hindi translation</em>
+</p>
+<p align="center">
+  <img src="images/eng-urdu.png" alt="english to Urdu translation"/>
+  <br>
+  <em>Figure 5: English to Urdu translation</em>
+</p>
+
+## Try it out on:
+
+[https://verta-ai.vercel.app](https://verta-ai.vercel.app)
 
 ---
 
