@@ -161,16 +161,8 @@ npm start
 
 ---
 
-## 📜 License
-
-This project is for educational and demonstration purposes.  
-Feel free to use, modify, and deploy it.
-
----
-
 ## 👩‍💻 Author
 
 **Saumya Gupta**  
-📫 [GitHub](https://github.com/sgupta701)
 
 ---
