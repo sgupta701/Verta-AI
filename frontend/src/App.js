@@ -6,7 +6,7 @@ const App = () => {
   const [inputText, setInputText] = useState("");
   const [translatedText, setTranslatedText] = useState("");
   const [sourceLang, setSourceLang] = useState("English");
-  const [targetLang, setTargetLang] = useState("Hindi");
+  const [targetLang, setTargetLang] = useState("Hindi"); 
   const [loading, setLoading] = useState(false);
 
   const languages = ["English", "Hindi", "Japanese", "Spanish", "Urdu"];
