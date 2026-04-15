@@ -1,20 +1,20 @@
  
-# 🌍 Verta AI - AI-Powered Multi-Language Translator
+# Verta AI - AI-Powered Multi-Language Translator
  
 **Verta AI** is a full-stack AI-powered web app for real-time multilingual text translation using Hugging Face’s **MBART transformer model**. It features a clean interface, developed with **Streamlit** (frontend) and **FastAPI** (backend), and deployable using **Vercel** and **Render**. 
 
 ---
 
-## ✅ Features
+## Features
  
-- 🌐 Translate across **English, Hindi, Japanese, Spanish, and Urdu**
-- ⚙️ Powered by **facebook/mbart-large-50-many-to-many-mmt**
-- 🧠 Built using **Transformers, PyTorch, FastAPI, React**
-- 🔤 Responsive dual-pane UI for input/output
+- Translate across **English, Hindi, Japanese, Spanish, and Urdu**
+- Powered by **facebook/mbart-large-50-many-to-many-mmt**
+- Built using **Transformers, PyTorch, FastAPI, React**
+- Responsive dual-pane UI for input/output
 
 ---
 
-## 📸 Live Demo
+## Live Demo
 
 Google Drive : [click here](https://drive.google.com/file/d/1MSSlnKq5SAocXPTalaukXjLYlJ92JEoT/view?usp=drive_link)
 
@@ -52,7 +52,7 @@ Screenshots:
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 | Layer      | Technology                     |
 |------------|--------------------------------|
@@ -63,7 +63,7 @@ Screenshots:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 multi-lang-translator/
@@ -88,9 +88,9 @@ multi-lang-translator/
 
 ---
 
-## 🚀 Local Setup Instructions
+## Local Setup Instructions
 
-### 🔧 1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/sgupta701/Verta-AI.git
@@ -99,7 +99,7 @@ cd multi-lang-translator
 
 ---
 
-### 🧠 2. Backend Setup (FastAPI)
+### 2. Backend Setup (FastAPI)
 
 ```bash
 cd backend
@@ -110,7 +110,7 @@ source venv/bin/activate       # macOS/Linux
 pip install -r requirements.txt
 ```
 
-> 💡 Install PyTorch manually if needed:
+> Install PyTorch manually if needed:
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
@@ -121,11 +121,11 @@ Run backend:
 uvicorn app.main:app --reload
 ```
 
-✅ API will be available at: `http://localhost:8000`
+API will be available at: `http://localhost:8000`
 
 ---
 
-### 💻 3. Frontend Setup (React)
+### 3. Frontend Setup (React)
 
 ```bash
 cd frontend
@@ -133,11 +133,11 @@ npm install
 npm start
 ```
 
-✅ Frontend will run at: `http://localhost:3000`
+Frontend will run at: `http://localhost:3000`
 
 ---
 
-## 🌐 Supported Language Pairs
+## Supported Language Pairs
 
 | Source Language | Target Languages                      |
 |-----------------|----------------------------------------|
@@ -147,22 +147,17 @@ npm start
 | Spanish         | English, Hindi, Japanese, Urdu         |
 | Urdu            | English, Hindi, Spanish, Japanese      |
 
-> ❌ **Hindi → Urdu** is intentionally blocked to avoid poor model performance.
+> **Hindi → Urdu** is intentionally blocked to avoid poor model performance.
 
 ---
 
-## 🌟 Planned Enhancements
+## Planned Enhancements
 
-- 🎛️ Tone/Formality selector via LLM rephrasing
-- 🔉 Text-to-Speech (TTS) support
-- 📁 File translation support (PDF, DOCX, TXT)
-- 🎙️ Voice input (using Whisper/Vosk)
-- ⬇️ Download translated output
-
----
-
-## 👩‍💻 Author
-
-**Saumya Gupta**  
+- Tone/Formality selector via LLM rephrasing
+- Text-to-Speech (TTS) support
+- File translation support (PDF, DOCX, TXT)
+- Voice input (using Whisper/Vosk)
+- Download translated output
 
 ---
+
